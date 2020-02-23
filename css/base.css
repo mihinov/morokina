@@ -265,8 +265,9 @@ a.demo--current {
 	left: -200px;
 	width: calc(100% + 400px);
 	height: calc(100% + 400px);
-	background-size: cover;
+	background-size: 100%;
 	background-position: 50% 50%;
+	background-repeat: no-repeat;
 }
 
 .slide__img::before {
