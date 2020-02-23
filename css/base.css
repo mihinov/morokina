@@ -263,7 +263,7 @@ a.demo--current {
 	position: absolute;
 	top: -200px;
 	left: -200px;
-	width: calc(100% + 400px);
+	width: calc(100% + 200px);
 	height: calc(100% + 400px);
 	background-size: 100%;
 	background-position: 50% 50%;
@@ -283,10 +283,6 @@ a.demo--current {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-.slidenav {
-	bottom: 30px;
-}
-
 .slidenav__item {
 	border: 0;
 	background: none;
@@ -297,7 +293,7 @@ a.demo--current {
 	transform: translateY(50%);
 	height: 100%;
 	transition: background-color .15s linear;
-	padding: 0 1% 0 1%;
+	padding: 0 1vw 0 1vw;
 }
 
 .slidenav__item--next {
@@ -359,6 +355,10 @@ a.demo--current {
 	text-align: center;
 }
 
+.slide__desc, .slide__title {
+	max-width: 95%;
+}
+
 .slide__link {
 	position: relative;
 	font-size: 1em;
@@ -405,9 +405,6 @@ a.demo--current {
 }
 
 @media screen and (max-width: 55em) {
-	body {
-		padding: 0 0 4em 0;
-	}
 	.content {
 		flex-direction: column;
 		height: auto;

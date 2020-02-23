@@ -1,15 +1,4 @@
-/**
- * demo2.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
 {
-    // From https://davidwalsh.name/javascript-debounce-function.
 	function debounce(func, wait, immediate) {
 		var timeout;
 		return function() {
@@ -74,7 +63,7 @@
             this.paths.initial = this.calculatePath('initial');
             this.paths.final = this.calculatePath('final');
             this.DOM.svg.setAttribute('viewbox',`0 0 ${this.rect.width} ${this.rect.height}`);
-            this.DOM.shape.setAttribute('d', this.isAnimating ? this.paths.final : this.paths.initial);
+            // this.DOM.shape.setAttribute('d', this.isAnimating ? this.paths.final : this.paths.initial);
         }
         calculatePath(path = 'initial') {
             if ( path === 'initial' ) {
@@ -183,6 +172,8 @@
         }
     };
 
-    new Slideshow(document.querySelector('.slideshow'));
+    new Slideshow(document.querySelectorAll('.slideshow')[0]);
+    imagesLoaded('.slide__img', { background: true }, () => document.body.classList.remove('loading'));
+    new Slideshow(document.querySelectorAll('.slideshow')[1]);
     imagesLoaded('.slide__img', { background: true }, () => document.body.classList.remove('loading'));
 };
