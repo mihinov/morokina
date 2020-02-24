@@ -294,6 +294,10 @@ section {
 	fill: white;
 }
 
+.slide__desc {
+	font-size: 20px;
+}
+
 @media (max-width: 1000px) {
 	.emoji__content {
 		font-size: 22px;
@@ -313,5 +317,12 @@ section {
 	.slideshow:nth-child(2) .slide:nth-child(4) .slide__img {
 		background-size: 110%;
 		background-position: -50% 50%;
+	}
+}
+
+@media (max-width: 700px) {
+	.slide__title {
+		font-size: 30px;
+		text-align: center;
 	}
 }
