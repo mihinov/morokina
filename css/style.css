@@ -232,6 +232,26 @@ section {
 	font-size: 25px;
 }
 
+.vk {
+	border-radius: 50%;
+	background-color: #d2d1cf;
+	transition: .25s ease-in-out background-color;
+}
+
+.vk path {
+	fill: #333333;
+	transition: .25s ease-in-out fill;
+}
+
+.vk:hover {
+	background-color: #4a76a8;
+}
+
+.vk:hover path {
+	fill: white;
+}
+
+
 @media (max-width: 1000px) {
 	.emoji__content {
 		font-size: 20px;
