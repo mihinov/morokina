@@ -228,10 +228,14 @@ section {
 	font-size: 25px;
 }
 
+.vk__link {
+	display: inline-block;
+}
+
 .vk {
 	border-radius: 50%;
 	background-color: #d2d1cf;
-	transition: .25s ease-in-out background-color;
+	transition: .2s ease-in-out background-color;
 }
 
 .vk path {
@@ -251,6 +255,44 @@ section {
 	text-align: center;
 }
 
+.instagram {
+	margin-left: 15px;
+	display: inline-block;
+}
+
+.instagram svg {
+	border-radius: 30%;
+}
+
+.instagram svg path {
+	fill: white;
+	transition: fill .2s ease-in-out;
+}
+
+.instagram:hover svg path {
+	fill: #9c3495;
+}
+
+.whatsapp {
+	margin-left: 15px;
+	display: inline-block;
+}
+
+.whatsapp svg path {
+	transition: fill .2s ease-in-out;
+}
+
+.whatsapp svg path:nth-child(1) {
+	fill: white;
+}
+
+.whatsapp:hover svg path:nth-child(1) {
+	fill: #4CAF50;
+}
+
+.whatsapp:hover svg path:nth-child(2) {
+	fill: white;
+}
 
 @media (max-width: 1000px) {
 	.emoji__content {
