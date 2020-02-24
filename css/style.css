@@ -268,4 +268,8 @@ section {
 		background-size: 160%;
 		background-position: 0 50%;
 	}
+	.slideshow:nth-child(2) .slide:nth-child(4) .slide__img {
+		background-size: 110%;
+		background-position: -50% 50%;
+	}
 }
