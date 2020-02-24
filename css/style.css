@@ -180,10 +180,6 @@ section {
 	color: black;
 }
 
-.section.price .card__item:not(:first-child) {
-	margin-top: 50px;
-}
-
 .button {
     display: block;
     color: white;
