@@ -254,6 +254,18 @@ section {
 
 @media (max-width: 1000px) {
 	.emoji__content {
-		font-size: 20px;
+		font-size: 22px;
+	}
+	.slideshow:nth-child(1) .slide:nth-child(3) .slide__img {
+		background-size: 150%;
+		background-position: 25% 50%;
+	}
+	.slideshow:nth-child(2) .slide:nth-child(2) .slide__img {
+		background-size: 150%;
+		background-position: 0 50%;
+	}
+	.slideshow:nth-child(2) .slide:nth-child(3) .slide__img {
+		background-size: 160%;
+		background-position: 0 50%;
 	}
 }
