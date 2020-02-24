@@ -251,6 +251,10 @@ section {
 	fill: white;
 }
 
+.content__punkt {
+	text-align: center;
+}
+
 
 @media (max-width: 1000px) {
 	.emoji__content {
